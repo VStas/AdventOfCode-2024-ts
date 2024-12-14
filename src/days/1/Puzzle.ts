@@ -2,8 +2,6 @@ function getArrays(input: string) {
   const lines = input.split('\n');
   const pairs = lines.map(line => line.split(/\D+/).map((str) => Number(str)));
 
-  console.log(pairs);
-
   const arrLeft = pairs.map(( pair ) => pair[0]);
   const arrRight = pairs.map(( pair) => pair[1]);
 
